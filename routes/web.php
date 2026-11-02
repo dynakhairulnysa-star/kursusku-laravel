@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CourseController; // Tambahan untuk Week 10
 use Illuminate\Http\Request;
 
 // Route untuk Halaman Beranda
@@ -39,3 +40,6 @@ Route::get('/courses/{course}/availability', function (int $course) {
     abort_unless(isset($availability[$course]), 404);
     return response()->json($availability[$course]);
 })->name('courses.availability');
+
+// Route Resource untuk CRUD Course (Week 10)
+Route::resource('courses', CourseController::class);
