@@ -5,17 +5,20 @@
             <div class="logo-badge">K</div>
             <div class="brand-text">
                 <h1>KursusKu</h1>
-                <p>Pemrograman Web III · kursusku-laravel</p>
+                <p>Pemrograman Web III · Laravel MVC</p>
             </div>
         </div>
 
-        <!-- KANAN: Menu & Badge Milestone -->
-        <div class="nav-right">
-            <div class="nav-links">
-                <a href="{{ route('home') }}" class="nav-link-custom">Beranda</a>
-                <a href="{{ route('enrollments.create') }}" class="nav-link-custom">Pendaftaran</a>
-            </div>
-            <span class="milestone-badge">Milestone 9</span>
+        <!-- TENGAH: Menu Navigasi -->
+        <div class="nav-links">
+            <a href="{{ route('home') }}" class="nav-link-custom">Beranda</a>
+            <a href="#alur-mvc" class="nav-link-custom">Alur MVC</a>
+            <a href="{{ route('enrollments.create') }}" class="nav-link-custom">Pendaftaran</a>
+        </div>
+        
+        <!-- KANAN: Tombol Lihat Program -->
+        <div class="nav-right-action">
+            <a href="#katalog" class="btn-lihat-program">Lihat Program</a>
         </div>
     </div>
 </header>
