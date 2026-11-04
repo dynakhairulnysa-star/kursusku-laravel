@@ -13,6 +13,10 @@
         <div class="nav-links">
             <a href="{{ route('home') }}" class="nav-link-custom">Beranda</a>
             <a href="#alur-mvc" class="nav-link-custom">Alur MVC</a>
+            
+            <!-- Menu Baru -->
+            <a href="{{ route('courses.index') }}" class="nav-link-custom">Kursusku</a>
+            
             <a href="{{ route('enrollments.create') }}" class="nav-link-custom">Pendaftaran</a>
         </div>
         
